@@ -65,12 +65,12 @@
     <div id="sikertelensor">Sikertelen próbálkozások: <div id="sikertelen">0</div></div>
 
     <script>
-        const field = document.getElementById('huColumn','enColumn');
-        field.addEventListener('focus',function(){
-            field.style.backgroundColor = 'blue';
+        const field = document.getElementById('huColumn');
+        field.addEventListener('click',function(){
+            field.style.Color = 'blue';
         })
-
-        field.addEventListener('blur',function(){
+        const enfield = document.getElementById('enColumn');
+        field.addEventListener('click',function(){
             field.style.backgroundColor = 'gray';
         })
         const szavak = [
