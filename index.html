@@ -65,6 +65,14 @@
     <div id="sikertelensor">Sikertelen próbálkozások: <div id="sikertelen">0</div></div>
 
     <script>
+        const field = document.getElementById('huColumn','enColumn');
+        field.addEventListener('focus',function(){
+            field.style.backgroundColor = 'blue';
+        })
+
+        field.addEventListener('blur',function(){
+            field.style.backgroundColor = 'gray';
+        })
         const szavak = [
             {hu: "alma", en: "apple"},
             {hu: "ház", en: "house"},
